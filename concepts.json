@@ -223,5 +223,320 @@
     "d": "Non attribuire a malevolenza ciò che può essere spiegato con incompetenza o distrazione. Eviterai molti conflitti inutili.",
     "ch": "Qualcuno si è comportato male con te di recente. Rileggi la situazione assumendo che non fosse malintenzionato. Cambia qualcosa?",
     "tags": ["bias", "relazioni", "pensiero critico"]
+  },
+  {
+    "id": 25,
+    "a": "Epitteto",
+    "b": "Enchiridion",
+    "t": "Dicotomia del Controllo",
+    "d": "Alcune cose dipendono da noi, altre no. Tutta la saggezza pratica nasce dal distinguere le due con precisione e dal concentrare l'energia solo sulla prima categoria.",
+    "ch": "Scrivi due colonne: 'Posso controllarlo' e 'Non posso controllarlo'. Sposta tutta la tua energia mentale di oggi sulla prima colonna.",
+    "tags": ["stoicismo", "focus", "resilienza"]
+  },
+  {
+    "id": 26,
+    "a": "Marco Aurelio",
+    "b": "Meditazioni",
+    "t": "Memento Mori",
+    "d": "La morte è certa. Usarla come consigliere chiarisce immediatamente ciò che conta davvero e ciò che è rumore. Non è pensiero cupo: è la calibrazione più onesta delle priorità.",
+    "ch": "Pensa a qualcosa che ti sta creando ansia o preoccupazione. Chiediti: avrà importanza tra dieci anni? Tra uno?",
+    "tags": ["stoicismo", "priorità", "prospettiva"]
+  },
+  {
+    "id": 27,
+    "a": "Seneca",
+    "b": "De Brevitate Vitae",
+    "t": "La vita non è breve",
+    "d": "Non è che la vita sia breve: è che la sprechiamo. Il tempo vissuto con piena presenza vale infinitamente più del tempo accumulato distrattamente.",
+    "ch": "Calcola quante ore della scorsa settimana hai trascorso in attività che non sceglieresti consapevolmente. Cosa elimineresti subito?",
+    "tags": ["stoicismo", "tempo", "focus"]
+  },
+  {
+    "id": 28,
+    "a": "Marco Aurelio",
+    "b": "Meditazioni",
+    "t": "L'Ostacolo è la Via",
+    "d": "Gli impedimenti all'azione non bloccano l'azione: la riorientano. Ogni ostacolo contiene in sé la strada per superarlo, se lo si affronta invece di aggirarlo.",
+    "ch": "Identifica un ostacolo che ti sembra bloccante. Invece di aggirarlo, chiediti: cosa posso imparare o guadagnare affrontandolo direttamente?",
+    "tags": ["stoicismo", "resilienza", "crescita"]
+  },
+  {
+    "id": 29,
+    "a": "Epitteto",
+    "b": "Enchiridion",
+    "t": "Non le cose, ma i giudizi",
+    "d": "Non sono gli eventi a turbarci, ma le opinioni che abbiamo sugli eventi. La sofferenza è quasi sempre un atto interpretativo, non una necessità.",
+    "ch": "Pensa a qualcosa che ti ha turbato di recente. Separalo in due parti: l'evento nudo e il giudizio che ci hai sovrapposto. Il secondo era inevitabile?",
+    "tags": ["stoicismo", "bias", "emozioni"]
+  },
+  {
+    "id": 30,
+    "a": "Seneca",
+    "b": "Lettere a Lucilio",
+    "t": "Ritira in te stesso",
+    "d": "La solitudine è una competenza rara e preziosa. Chi non sa stare con se stesso dipende strutturalmente dagli altri per sentirsi bene, e questo crea dipendenza.",
+    "ch": "Passa almeno 30 minuti oggi in silenzio, senza telefono e senza distrazioni. Solo tu e i tuoi pensieri. Cosa emerge?",
+    "tags": ["stoicismo", "crescita", "focus"]
+  },
+  {
+    "id": 31,
+    "a": "Marco Aurelio",
+    "b": "Meditazioni",
+    "t": "Agire bene senza spettatori",
+    "d": "Fare la cosa giusta indipendentemente dal riconoscimento è la vera prova del carattere. Il valore di un'azione non dipende da chi la vede.",
+    "ch": "Oggi fai una cosa buona che nessuno saprà mai. Non dirlo a nessuno.",
+    "tags": ["stoicismo", "integrità", "carattere"]
+  },
+  {
+    "id": 32,
+    "a": "Daniel Kahneman",
+    "b": "Thinking, Fast and Slow",
+    "t": "Sistema 1 e Sistema 2",
+    "d": "La mente opera su due velocità: una rapida e intuitiva (Sistema 1), l'altra lenta e analitica (Sistema 2). La maggior parte degli errori nasce dal lasciare al Sistema 1 decisioni che richiederebbero il Sistema 2.",
+    "ch": "Identifica una decisione recente presa d'istinto. Se avessi rallentato e pensato sistematicamente, saresti arrivato alla stessa conclusione?",
+    "tags": ["bias", "decisioni", "pensiero critico"]
+  },
+  {
+    "id": 33,
+    "a": "Daniel Kahneman",
+    "b": "Thinking, Fast and Slow",
+    "t": "Peak-End Rule",
+    "d": "Ricordiamo un'esperienza in base al suo momento più intenso e alla sua conclusione, non alla media. Chi progetta esperienze — anche le proprie — dovrebbe tenerlo sempre a mente.",
+    "ch": "Pensa a un'ultima conversazione importante. Come è finita? La fine ha colorato tutta la tua percezione dell'incontro?",
+    "tags": ["bias", "psicologia", "comunicazione"]
+  },
+  {
+    "id": 34,
+    "a": "Daniel Kahneman",
+    "b": "Thinking, Fast and Slow",
+    "t": "Anchoring Bias",
+    "d": "Il primo numero o dato che sentiamo condiziona tutti i giudizi successivi, anche quando è arbitrario o irrilevante. Chi lancia l'ancora prima guadagna un vantaggio strutturale.",
+    "ch": "Nelle prossime trattative o conversazioni, nota chi lancia il primo numero. Sei tu o l'altro? Allenati a muoverti per primo.",
+    "tags": ["bias", "persuasione", "decisioni"]
+  },
+  {
+    "id": 35,
+    "a": "Daniel Kahneman",
+    "b": "Thinking, Fast and Slow",
+    "t": "Sunk Cost Fallacy",
+    "d": "Continuiamo a investire in qualcosa solo perché lo abbiamo già fatto in passato, anche quando non ha più senso. Il costo irrecuperabile non dovrebbe influenzare le decisioni future.",
+    "ch": "C'è un progetto, relazione o abitudine in cui stai continuando solo perché hai già investito troppo? Valutala come se ricominciassi da zero oggi.",
+    "tags": ["bias", "decisioni", "pensiero critico"]
+  },
+  {
+    "id": 36,
+    "a": "Daniel Kahneman",
+    "b": "Thinking, Fast and Slow",
+    "t": "Focusing Illusion",
+    "d": "Niente nella vita è importante quanto pensi nel momento in cui ci stai pensando. La nostra attenzione distorce sempre il peso delle cose: ciò che è a fuoco sembra sempre più grande del dovuto.",
+    "ch": "Qual è il problema che ti sembra più urgente oggi? Immagina te stesso tra sei mesi: quanto spazio occuperà ancora nella tua testa?",
+    "tags": ["bias", "priorità", "prospettiva"]
+  },
+  {
+    "id": 37,
+    "a": "Carol Dweck",
+    "b": "Mindset",
+    "t": "Growth Mindset",
+    "d": "Le capacità non sono fisse: si sviluppano con l'impegno e la pratica. Chi crede questo impara più velocemente, si riprende meglio dagli errori e vede le sfide come opportunità invece che come minacce.",
+    "ch": "Sostituisci 'non so farlo' con 'non so ancora farlo'. Poi identifica un passo concreto verso quella competenza e fallo oggi.",
+    "tags": ["crescita", "apprendimento", "mindset"]
+  },
+  {
+    "id": 38,
+    "a": "James Clear",
+    "b": "Atomic Habits",
+    "t": "Identità come base delle abitudini",
+    "d": "Il cambiamento duraturo non viene dai risultati o dai comportamenti, ma dall'identità. Non 'voglio fare sport' ma 'sono una persona attiva'. Ogni azione è un voto per il tipo di persona che vuoi diventare.",
+    "ch": "Scegli un'abitudine che vuoi costruire. Riformulala come un tratto identitario. Chi sei quando la pratichi con costanza?",
+    "tags": ["abitudini", "identità", "crescita"]
+  },
+  {
+    "id": 39,
+    "a": "James Clear",
+    "b": "Atomic Habits",
+    "t": "Il Compounding del Progresso",
+    "d": "Un miglioramento dell'1% al giorno porta a essere 37 volte migliori in un anno. Il compounding funziona sul progresso esattamente come sul denaro: i guadagni si accumulano su se stessi.",
+    "ch": "Identifica un'area della tua vita dove un piccolo miglioramento quotidiano avrebbe un impatto enorme nel lungo periodo. Qual è il tuo 1% di oggi?",
+    "tags": ["abitudini", "crescita", "sistemi"]
+  },
+  {
+    "id": 40,
+    "a": "Cal Newport",
+    "b": "Deep Work",
+    "t": "Lavoro Profondo",
+    "d": "La capacità di concentrarsi senza distrazioni su un compito cognitivamente impegnativo è sempre più rara e sempre più preziosa. Chi la coltiva ha un vantaggio strutturale nell'economia moderna.",
+    "ch": "Blocca 90 minuti nel calendario per lavoro profondo, senza notifiche, email o interruzioni. Fallo oggi, non domani.",
+    "tags": ["focus", "produttività", "crescita"]
+  },
+  {
+    "id": 41,
+    "a": "Stephen Covey",
+    "b": "Le 7 Abitudini",
+    "t": "Circolo d'Influenza",
+    "d": "Le preoccupazioni che non possiamo influenzare ci drenano energia senza restituire nulla. Le persone efficaci concentrano tutta la propria attenzione su ciò che possono davvero cambiare.",
+    "ch": "Dividi le tue preoccupazioni attuali in due gruppi: quelle su cui puoi agire e quelle che non controlli. Ignora consapevolmente il secondo gruppo per tutta la giornata.",
+    "tags": ["focus", "efficacia", "mindset"]
+  },
+  {
+    "id": 42,
+    "a": "Viktor Frankl",
+    "b": "Man's Search for Meaning",
+    "t": "Libertà di atteggiamento",
+    "d": "Tra uno stimolo e la nostra risposta c'è sempre uno spazio. In quello spazio risiede la nostra libertà. Nessuna circostanza esterna può toglierci il diritto di scegliere come reagire.",
+    "ch": "Pensa a una situazione difficile che non puoi cambiare. Cosa puoi scegliere attivamente riguardo al tuo atteggiamento nei suoi confronti?",
+    "tags": ["resilienza", "mindset", "stoicismo"]
+  },
+  {
+    "id": 43,
+    "a": "Adam Grant",
+    "b": "Think Again",
+    "t": "Pensiero Riconsiderato",
+    "d": "I più intelligenti non difendono le proprie idee: le mettono continuamente alla prova. La capacità di cambiare opinione di fronte a prove solide è una forza intellettuale, non una debolezza.",
+    "ch": "Scegli una convinzione che tieni per vera da tempo. Cerca attivamente tre argomenti solidi che la contraddicono. Regge ancora?",
+    "tags": ["pensiero critico", "umiltà", "apprendimento"]
+  },
+  {
+    "id": 44,
+    "a": "Robert Cialdini",
+    "b": "Influence",
+    "t": "Liking",
+    "d": "Siamo molto più facilmente persuasi da chi ci piace. Somiglianza, complimenti genuini e familiarità aumentano il gradimento e abbassano le difese critiche in modo quasi automatico.",
+    "ch": "Identifica qualcuno che riesce a convincerti facilmente. La loro influenza su di te è dovuta alla forza degli argomenti o al fatto che ti piacciono?",
+    "tags": ["persuasione", "bias", "relazioni"]
+  },
+  {
+    "id": 45,
+    "a": "Robert Cialdini",
+    "b": "Influence",
+    "t": "Unity",
+    "d": "Il senso di appartenenza a un gruppo comune è il principio di persuasione più profondo. Prima ancora del messaggio conta chi lo dice e se appartiene alla nostra stessa tribù.",
+    "ch": "Nota oggi quante decisioni prendi perché 'è quello che fa la mia tribù'. Sono scelte tue o del gruppo?",
+    "tags": ["persuasione", "conformismo", "identità"]
+  },
+  {
+    "id": 46,
+    "a": "Dale Carnegie",
+    "b": "Come trattare gli altri",
+    "t": "Parla in termini degli interessi altrui",
+    "d": "Le persone non si muovono per i tuoi obiettivi, ma per i propri. Chi capisce questo smette di persuadere e inizia a allineare gli interessi — il che è molto più efficace.",
+    "ch": "Prima di una conversazione importante oggi, chiediti: cosa vuole davvero l'altra persona? Come puoi fare in modo che aiutarti sia anche nel suo interesse?",
+    "tags": ["comunicazione", "persuasione", "relazioni"]
+  },
+  {
+    "id": 47,
+    "a": "Dale Carnegie",
+    "b": "Come trattare gli altri",
+    "t": "Ammetti i tuoi errori",
+    "d": "Riconoscere i propri torti rapidamente e con decisione disarma la critica prima che arrivi. Chi lo fa per primo guadagna rispetto, non lo perde.",
+    "ch": "C'è qualcosa che hai sbagliato di recente e non hai ancora riconosciuto apertamente? Fallo oggi, senza cercare attenuanti.",
+    "tags": ["comunicazione", "integrità", "relazioni"]
+  },
+  {
+    "id": 48,
+    "a": "Dale Carnegie",
+    "b": "Come trattare gli altri",
+    "t": "Non discutere mai",
+    "d": "Non si vince mai una discussione: chi perde è umiliato, chi vince crea un nemico. Nelle dispute, l'unico vero obiettivo è preservare la relazione e trovare un accordo.",
+    "ch": "La prossima volta che senti l'impulso di controbattere, fermati. Trova invece un punto di accordo genuino e parti da lì.",
+    "tags": ["comunicazione", "relazioni", "persuasione"]
+  },
+  {
+    "id": 49,
+    "a": "Robert Greene",
+    "b": "The Laws of Human Nature",
+    "t": "Il Contagio Emotivo",
+    "d": "Le emozioni si trasmettono come virus. Essere in presenza di persone negative, ansiose o ciniche ha un costo reale sul tuo stato mentale, spesso senza che tu te ne accorga.",
+    "ch": "Pensa alle cinque persone con cui passi più tempo. Qual è l'emozione dominante che porti via da queste interazioni? È quella che vuoi coltivare?",
+    "tags": ["relazioni", "emozioni", "ambiente"]
+  },
+  {
+    "id": 50,
+    "a": "Robert Greene",
+    "b": "Mastery",
+    "t": "Il valore del Mentore",
+    "d": "Un mentore che ha già percorso la strada che vuoi fare ti risparmia anni di errori costosi. Trovarne uno è tra le leve più potenti — e più sottovalutate — della crescita.",
+    "ch": "Esiste qualcuno che ha già raggiunto ciò che vuoi raggiungere tu? Come potresti avvicinarti a questa persona? Cosa potresti offrirle in cambio?",
+    "tags": ["apprendimento", "crescita", "relazioni"]
+  },
+  {
+    "id": 51,
+    "a": "Robert Greene",
+    "b": "Le 33 Strategie di Guerra",
+    "t": "Non agire per emozione",
+    "d": "Le decisioni prese sotto rabbia, paura o euforia sono quasi sempre sbagliate. I grandi strateghi aspettano la calma prima di muoversi: il tempo è un'arma.",
+    "ch": "Hai una decisione in sospeso che senti urgente? Aspetta 24 ore prima di agire. Rileggila a mente fredda e osserva cosa cambia.",
+    "tags": ["strategia", "emozioni", "decisioni"]
+  },
+  {
+    "id": 52,
+    "a": "Charlie Munger",
+    "b": "Poor Charlie's Almanack",
+    "t": "Incentivi come causa prima",
+    "d": "Le persone fanno ciò per cui vengono premiate, anche inconsciamente. Prima di giudicare un comportamento — tuo o altrui — guarda il sistema di incentivi che lo produce.",
+    "ch": "Pensa a un comportamento di qualcuno (o tuo) che trovi irrazionale. Quali incentivi, anche nascosti, potrebbero spiegarlo?",
+    "tags": ["incentivi", "psicologia", "sistemi"]
+  },
+  {
+    "id": 53,
+    "a": "Charlie Munger",
+    "b": "Poor Charlie's Almanack",
+    "t": "Effetto Lollapalooza",
+    "d": "Quando più bias cognitivi si attivano contemporaneamente nella stessa direzione, il risultato è un comportamento estremo e quasi impossibile da resistere — anche per persone intelligenti.",
+    "ch": "Pensa a una decisione passata che in retrospettiva era chiaramente sbagliata. Quanti bias diversi ti stavano spingendo nella stessa direzione?",
+    "tags": ["bias", "pensiero critico", "decisioni"]
+  },
+  {
+    "id": 54,
+    "a": "Farnam Street",
+    "b": "The Great Mental Models",
+    "t": "La Mappa non è il Territorio",
+    "d": "I nostri modelli mentali sono semplificazioni della realtà, non la realtà stessa. Confondere i due — trattare la mappa come se fosse il territorio — è la fonte di quasi ogni errore di giudizio.",
+    "ch": "Identifica un modello mentale che usi spesso per interpretare la realtà. Dove potrebbe essere impreciso? Cosa stai omettendo o distorcendo?",
+    "tags": ["pensiero critico", "modelli mentali", "bias"]
+  },
+  {
+    "id": 55,
+    "a": "Farnam Street",
+    "b": "The Great Mental Models",
+    "t": "Pensiero Bayesiano",
+    "d": "Non aggiornare le proprie credenze alla luce di nuove prove è un errore logico grave. Il pensiero rigoroso richiede di rivedere continuamente le probabilità man mano che arrivano nuove informazioni.",
+    "ch": "Scegli una credenza che tieni per vera. Quali nuove informazioni ti farebbero cambiare idea? Le stai cercando attivamente o le eviti?",
+    "tags": ["pensiero critico", "probabilità", "umiltà"]
+  },
+  {
+    "id": 56,
+    "a": "Nassim Taleb",
+    "b": "Antifragile",
+    "t": "Strategia Barbell",
+    "d": "Per affrontare l'incertezza, metti la maggior parte delle risorse in qualcosa di estremamente sicuro e una piccola parte in scommesse asimmetriche ad alto potenziale. Evita il rischio medio: è lì che si perde tutto.",
+    "ch": "Nel tuo lavoro o nei tuoi investimenti di tempo, stai assumendo rischi medi o hai una struttura barbell? Cosa cambieresti nella distribuzione?",
+    "tags": ["rischio", "strategia", "incertezza"]
+  },
+  {
+    "id": 57,
+    "a": "Nassim Taleb",
+    "b": "Il Cigno Nero",
+    "t": "Asimmetria della conoscenza",
+    "d": "Sapere che qualcosa è falso è più utile che accumulare mille prove che sia vero. Un solo controesempio distrugge una teoria: è questa la forma più robusta di conoscenza.",
+    "ch": "Qual è una teoria o un piano su cui ti stai basando molto? Cosa potrebbe falsificarlo in un colpo solo? Hai davvero verificato quella possibilità?",
+    "tags": ["probabilità", "pensiero critico", "incertezza"]
+  },
+  {
+    "id": 58,
+    "a": "Richard Feynman",
+    "b": "Surely You're Joking, Mr. Feynman!",
+    "t": "La Tecnica Feynman",
+    "d": "Se non riesci a spiegare qualcosa in modo semplice, non lo capisci davvero. La complessità del linguaggio nasconde spesso la superficialità del pensiero.",
+    "ch": "Prendi un concetto che ritieni di conoscere bene. Spiegalo come faresti a un bambino di dieci anni. Dove ti blocchi? Là c'è il gap reale.",
+    "tags": ["apprendimento", "pensiero critico", "comunicazione"]
+  },
+  {
+    "id": 59,
+    "a": "Epitteto",
+    "b": "Enchiridion",
+    "t": "Agire secondo il proprio ruolo",
+    "d": "Ognuno ricopre più ruoli: figlio, amico, professionista, collega. La virtù non è astratta — si esercita concretamente all'interno di ogni ruolo, ogni giorno.",
+    "ch": "Scegli il ruolo più importante che ricopri oggi. Stai agendo in modo pienamente coerente con i valori che questo ruolo richiede? Dov'è il gap?",
+    "tags": ["stoicismo", "integrità", "carattere"]
   }
 ]
