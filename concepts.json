@@ -1,0 +1,227 @@
+[
+  {
+    "id": 0,
+    "a": "Nassim Taleb",
+    "b": "Antifragile",
+    "t": "Antifragilità",
+    "d": "I sistemi antifragili non solo resistono al caos, ma ne traggono vantaggio. Non puntare solo alla robustezza: costruisci situazioni che migliorano sotto stress.",
+    "ch": "Identifica una situazione difficile che stai attraversando. Come potresti strutturarla per uscirne più forte, non solo indenne?",
+    "tags": ["rischio", "sistemi", "resilienza"]
+  },
+  {
+    "id": 1,
+    "a": "Nassim Taleb",
+    "b": "Il Cigno Nero",
+    "t": "Il Cigno Nero",
+    "d": "Gli eventi più impattanti sono quelli che non ci aspettiamo. La storia è scritta da cigni neri, non da eventi prevedibili.",
+    "ch": "Elenca 3 assunzioni che dai per scontate nel lavoro o nella vita. Cosa succede se anche una sola di esse è falsa?",
+    "tags": ["probabilità", "incertezza", "bias"]
+  },
+  {
+    "id": 2,
+    "a": "Nassim Taleb",
+    "b": "Via Negativa",
+    "t": "Via Negativa",
+    "d": "Spesso si migliora eliminando, non aggiungendo. La saggezza sta nel sapere cosa togliere, non cosa aggiungere.",
+    "ch": "Cosa hai in agenda oggi che potresti eliminare senza perdere davvero nulla di importante? Rimuovi almeno una cosa.",
+    "tags": ["minimalismo", "decisioni", "focus"]
+  },
+  {
+    "id": 3,
+    "a": "Nassim Taleb",
+    "b": "Skin in the Game",
+    "t": "Skin in the Game",
+    "d": "Non fidarti di chi ti dà consigli senza avere nulla da perdere. Chi ha pelle nel gioco allinea i propri interessi con i tuoi.",
+    "ch": "Pensa a un consiglio che hai ricevuto di recente. Chi te lo ha dato ha davvero qualcosa da perdere se le cose vanno male?",
+    "tags": ["fiducia", "incentivi", "rischio"]
+  },
+  {
+    "id": 4,
+    "a": "Nassim Taleb",
+    "b": "Fooled by Randomness",
+    "t": "Bias di Sopravvivenza",
+    "d": "Vediamo solo i sopravvissuti, non i falliti. Questo ci porta a sopravvalutare le probabilità di successo imitando i vincitori.",
+    "ch": "Pensa a un modello di successo che ammiri. Quante persone hanno seguito lo stesso percorso senza riuscirci? Cambia la tua prospettiva?",
+    "tags": ["bias", "probabilità", "pensiero critico"]
+  },
+  {
+    "id": 5,
+    "a": "Nassim Taleb",
+    "b": "Il Cigno Nero",
+    "t": "Mediocristan vs Estremistan",
+    "d": "In Mediocristan gli estremi contano poco. In Estremistan un singolo evento può dominare tutto. Capire dove vivi cambia ogni strategia.",
+    "ch": "Il tuo campo professionale è più vicino a Mediocristan o Estremistan? Come cambia la tua strategia in base alla risposta?",
+    "tags": ["probabilità", "strategia", "rischio"]
+  },
+  {
+    "id": 6,
+    "a": "Robert Cialdini",
+    "b": "Influence",
+    "t": "Reciprocità",
+    "d": "Siamo programmati per restituire ciò che riceviamo. Chi dona per primo crea un obbligo implicito nell'altro.",
+    "ch": "Oggi fai qualcosa di utile per qualcuno senza aspettarti nulla in cambio. Poi osserva come cambia la dinamica del vostro rapporto.",
+    "tags": ["persuasione", "relazioni", "psicologia"]
+  },
+  {
+    "id": 7,
+    "a": "Robert Cialdini",
+    "b": "Influence",
+    "t": "Social Proof",
+    "d": "In situazioni di incertezza, guardiamo agli altri per capire come comportarci. È un'euristica potente e spesso sfruttata.",
+    "ch": "Identifica una scelta che hai fatto di recente influenzato da quello che facevano tutti. Era davvero la scelta giusta per te?",
+    "tags": ["persuasione", "bias", "conformismo"]
+  },
+  {
+    "id": 8,
+    "a": "Robert Cialdini",
+    "b": "Influence",
+    "t": "Scarcity Bias",
+    "d": "Valutiamo di più ciò che è raro o che potremmo perdere. La scarsità aumenta il desiderio, anche quando è artificiale.",
+    "ch": "Hai acquistato o deciso qualcosa spinto da \"offerta limitata\" o \"ultimi posti\"? Rianalizza quella decisione a mente fredda.",
+    "tags": ["persuasione", "bias", "decisioni"]
+  },
+  {
+    "id": 9,
+    "a": "Robert Cialdini",
+    "b": "Influence",
+    "t": "Authority Bias",
+    "d": "Tendiamo a fidarci degli esperti anche quando esulano dal loro campo di competenza. L'autorità silenzia il pensiero critico.",
+    "ch": "Identifica un'opinione che hai adottato basandoti sull'autorità di chi parlava. Hai mai verificato in modo indipendente?",
+    "tags": ["bias", "pensiero critico", "persuasione"]
+  },
+  {
+    "id": 10,
+    "a": "Robert Cialdini",
+    "b": "Influence",
+    "t": "Commitment & Consistency",
+    "d": "Una volta che ci impegniamo pubblicamente, tendiamo a restare coerenti, anche se le condizioni cambiano.",
+    "ch": "C'è qualcosa a cui ti senti obbligato a restare fedele solo perché lo hai detto in passato? Vale ancora la pena?",
+    "tags": ["persuasione", "bias", "decisioni"]
+  },
+  {
+    "id": 11,
+    "a": "Robert Cialdini",
+    "b": "Pre-Suasion",
+    "t": "Pre-Suasion",
+    "d": "Ciò che precede un messaggio condiziona come viene recepito. Il contesto creato prima di comunicare è importante quanto il messaggio stesso.",
+    "ch": "Pensa a una conversazione importante che devi avere. Come potresti preparare il terreno ancora prima di iniziarla?",
+    "tags": ["persuasione", "comunicazione", "strategia"]
+  },
+  {
+    "id": 12,
+    "a": "Robert Greene",
+    "b": "Le 48 Leggi del Potere",
+    "t": "Non eclissare mai il maestro",
+    "d": "Mostrare la propria superiorità al superiore è pericoloso. Fai in modo che si sentano sempre più brillanti di te.",
+    "ch": "C'è qualcuno che potresti aver messo in ombra involontariamente? Come potresti rimediare?",
+    "tags": ["potere", "relazioni", "strategia"]
+  },
+  {
+    "id": 13,
+    "a": "Robert Greene",
+    "b": "Mastery",
+    "t": "Pratica Deliberata",
+    "d": "La maestria non viene dalle ore accumulate, ma dalla qualità dell'attenzione durante la pratica. Il feedback immediato è essenziale.",
+    "ch": "Scegli una skill su cui vuoi migliorare. Definisci un esercizio specifico con feedback immediato da fare per almeno 20 minuti oggi.",
+    "tags": ["apprendimento", "crescita", "focus"]
+  },
+  {
+    "id": 14,
+    "a": "Robert Greene",
+    "b": "The Art of Seduction",
+    "t": "Il Potere dell'Assenza",
+    "d": "L'assenza e la rarità aumentano il valore percepito. Essere sempre disponibili rende prevedibili e toglie fascino.",
+    "ch": "Riduci la tua reattività (messaggi, email) in almeno un contesto oggi. Osserva come cambia la dinamica.",
+    "tags": ["potere", "relazioni", "strategia"]
+  },
+  {
+    "id": 15,
+    "a": "Robert Greene",
+    "b": "Le 48 Leggi del Potere",
+    "t": "Azioni, non parole",
+    "d": "Le dimostrazioni valgono più delle spiegazioni. Mostrare è sempre più convincente che dire.",
+    "ch": "Stai cercando di affermare qualcosa a parole senza ancora dimostrarlo coi fatti? Cosa puoi fare oggi per mostrarlo invece di dirlo?",
+    "tags": ["potere", "comunicazione", "azione"]
+  },
+  {
+    "id": 16,
+    "a": "Dale Carnegie",
+    "b": "Come trattare gli altri",
+    "t": "Non criticare, non condannare",
+    "d": "La critica mette l'altro sulla difensiva e raramente cambia comportamenti. Le persone agiscono per emozioni, non per logica.",
+    "ch": "Oggi, quando senti l'impulso di criticare qualcuno, fermati. Trova qualcosa di genuino da apprezzare in quella persona.",
+    "tags": ["relazioni", "comunicazione", "leadership"]
+  },
+  {
+    "id": 17,
+    "a": "Dale Carnegie",
+    "b": "Come trattare gli altri",
+    "t": "Fai sentire importante l'altro",
+    "d": "Il desiderio più profondo della natura umana è essere apprezzati. Soddisfarlo è la chiave delle relazioni efficaci.",
+    "ch": "Oggi di' a tre persone qualcosa di specifico e sincero su qualcosa che fanno bene. Osserva le reazioni.",
+    "tags": ["relazioni", "comunicazione", "leadership"]
+  },
+  {
+    "id": 18,
+    "a": "Dale Carnegie",
+    "b": "Come trattare gli altri",
+    "t": "Ricorda i nomi",
+    "d": "Il nome di una persona è, per lei, il suono più dolce in qualsiasi lingua. Ricordarlo e usarlo costruisce rapporti istantanei.",
+    "ch": "La prossima volta che incontri qualcuno di nuovo, ripeti il suo nome durante la conversazione almeno due volte.",
+    "tags": ["relazioni", "comunicazione", "memoria"]
+  },
+  {
+    "id": 19,
+    "a": "Farnam Street",
+    "b": "The Great Mental Models",
+    "t": "First Principles",
+    "d": "Scomponi i problemi nelle loro componenti fondamentali invece di ragionare per analogia. Così trovi soluzioni che gli altri non vedono.",
+    "ch": "Prendi un problema che stai affrontando e chiedi \"perché?\" almeno cinque volte di fila. Dove arrivi?",
+    "tags": ["pensiero critico", "problem solving", "innovazione"]
+  },
+  {
+    "id": 20,
+    "a": "Farnam Street",
+    "b": "The Great Mental Models",
+    "t": "Inversione",
+    "d": "Invece di chiederti come raggiungere un obiettivo, chiediti cosa potrebbe farlo fallire. Poi evita quegli errori.",
+    "ch": "Prendi il tuo obiettivo principale di questo mese. Elenca tutto ciò che potrebbe farlo fallire. Li stai evitando attivamente?",
+    "tags": ["pensiero critico", "strategia", "decisioni"]
+  },
+  {
+    "id": 21,
+    "a": "Farnam Street",
+    "b": "The Great Mental Models",
+    "t": "Second Order Thinking",
+    "d": "Le conseguenze di primo livello sono ovvie. Quelle di secondo e terzo livello nascondono le opportunità e i pericoli reali.",
+    "ch": "Pensa a una decisione che devi prendere. Scrivi le conseguenze di primo ordine, poi di secondo, poi di terzo.",
+    "tags": ["pensiero critico", "strategia", "decisioni"]
+  },
+  {
+    "id": 22,
+    "a": "Farnam Street",
+    "b": "The Great Mental Models",
+    "t": "Cerchio di Competenza",
+    "d": "Sai cosa sai. Ma sai anche cosa non sai? Rimanere nel proprio cerchio di competenza evita errori costosi.",
+    "ch": "In quale area della tua vita stai prendendo decisioni fuori dal tuo cerchio di competenza? Come potresti compensare?",
+    "tags": ["pensiero critico", "umiltà", "decisioni"]
+  },
+  {
+    "id": 23,
+    "a": "Charlie Munger",
+    "b": "Poor Charlie's Almanack",
+    "t": "Availability Bias",
+    "d": "Giudichiamo la probabilità di eventi in base a quanto facilmente ci vengono in mente. Ciò che è vivido sembra più probabile.",
+    "ch": "Pensa a una previsione recente. Era basata su dati reali o su ciò che ricordavi più facilmente?",
+    "tags": ["bias", "pensiero critico", "probabilità"]
+  },
+  {
+    "id": 24,
+    "a": "Charlie Munger",
+    "b": "Poor Charlie's Almanack",
+    "t": "Rasoio di Hanlon",
+    "d": "Non attribuire a malevolenza ciò che può essere spiegato con incompetenza o distrazione. Eviterai molti conflitti inutili.",
+    "ch": "Qualcuno si è comportato male con te di recente. Rileggi la situazione assumendo che non fosse malintenzionato. Cambia qualcosa?",
+    "tags": ["bias", "relazioni", "pensiero critico"]
+  }
+]

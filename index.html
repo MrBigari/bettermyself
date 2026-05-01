@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Arena</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAF9F6;
+    --surface: #FFFFFF;
+    --surface-2: #F1EFE8;
+    --border: rgba(0,0,0,0.1);
+    --border-md: rgba(0,0,0,0.18);
+    --text: #1A1A18;
+    --muted: #6B6A65;
+    --hint: #A09F9A;
+    --accent: #1A1A18;
+    --r-md: 8px;
+    --r-lg: 14px;
+    --font-body: 'DM Sans', sans-serif;
+    --font-display: 'EB Garamond', Georgia, serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: var(--bg); min-height: 100vh; }
+  body { font-family: var(--font-body); color: var(--text); background: var(--bg); min-height: 100vh; line-height: 1.6; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+  .wordmark { font-family: var(--font-display); font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.5rem; }
+  .header { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 1.25rem; border-bottom: 0.5px solid var(--border); margin-bottom: 1.25rem; }
+  .level-name { font-family: var(--font-display); font-size: 22px; font-weight: 400; line-height: 1.2; margin-bottom: 3px; }
+  .xp-label { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+  .progress-bar { width: 160px; height: 3px; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
+  .progress-fill { height: 3px; background: var(--accent); border-radius: 2px; transition: width 0.4s ease; }
+  .progress-hint { font-size: 11px; color: var(--hint); margin-top: 5px; }
+  .streak-block { text-align: right; }
+  .streak-num { font-family: var(--font-display); font-size: 28px; font-weight: 400; line-height: 1; }
+  .streak-label { font-size: 11px; color: var(--muted); }
+  .nav { display: flex; border-bottom: 0.5px solid var(--border); margin-bottom: 1.25rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .nav::-webkit-scrollbar { display: none; }
+  .nb { background: none; border: none; border-bottom: 2px solid transparent; padding: 10px 14px; cursor: pointer; font-size: 13px; font-family: var(--font-body); color: var(--muted); white-space: nowrap; transition: color 0.15s; }
+  .nb:hover { color: var(--text); }
+  .nb.on { color: var(--text); border-bottom-color: var(--text); font-weight: 500; }
+  .card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--r-lg); padding: 1.25rem; margin-bottom: 12px; }
+  .tag { display: inline-block; padding: 2px 9px; background: var(--surface-2); color: var(--muted); border-radius: 10px; font-size: 11px; margin: 2px 2px 2px 0; }
+  .challenge-block { background: var(--surface-2); border-radius: var(--r-md); padding: 14px 16px; border-left: 2px solid var(--border-md); margin-top: 1rem; }
+  .challenge-label { font-size: 10px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 7px; }
+  .challenge-text { font-size: 14px; line-height: 1.7; }
+  .type-btn { background: none; border: 0.5px solid var(--border-md); padding: 7px 14px; border-radius: var(--r-md); cursor: pointer; font-size: 13px; font-family: var(--font-body); color: var(--muted); transition: all 0.15s; }
+  .type-btn:hover { color: var(--text); }
+  textarea { width: 100%; min-height: 95px; padding: 10px 12px; border: 0.5px solid var(--border-md); border-radius: var(--r-md); font-family: var(--font-body); font-size: 14px; resize: vertical; background: var(--bg); color: var(--text); line-height: 1.65; margin-top: 12px; outline: none; transition: border-color 0.15s; }
+  textarea:focus { border-color: var(--accent); }
+  .btn-main { background: var(--accent); color: var(--bg); border: none; padding: 9px 20px; border-radius: var(--r-md); cursor: pointer; font-size: 14px; font-weight: 500; font-family: var(--font-body); transition: opacity 0.15s; }
+  .btn-main:hover { opacity: 0.82; }
+  .flash { background: #EAF3DE; color: #27500A; padding: 11px 14px; border-radius: var(--r-md); margin-bottom: 1rem; font-size: 14px; font-weight: 500; animation: fadeIn 0.2s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+  .badge { padding: 3px 10px; border-radius: 10px; font-size: 12px; font-weight: 500; }
+  .metric { background: var(--surface-2); padding: 1rem; border-radius: var(--r-md); }
+  .metric-label { font-size: 11px; color: var(--muted); margin-bottom: 5px; }
+  .metric-val { font-family: var(--font-display); font-size: 22px; font-weight: 400; }
+  .metric-sub { font-size: 11px; color: var(--hint); margin-top: 5px; }
+  .concept-author { font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+  .concept-author em { font-style: italic; }
+  .concept-title { font-family: var(--font-display); font-size: 24px; font-weight: 400; margin-bottom: 10px; }
+  .concept-body { font-size: 14px; line-height: 1.75; }
+  .section-label { font-size: 11px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 10px; }
+  .empty { text-align: center; padding: 3.5rem 1rem; color: var(--muted); }
+  .empty p:first-child { font-family: var(--font-display); font-size: 20px; font-weight: 400; color: var(--text); margin-bottom: 8px; }
+  .author-header { font-size: 11px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin: 1.5rem 0 10px; }
+  .author-header:first-of-type { margin-top: 0; }
+  .log-meta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; margin-bottom: 9px; }
+  .log-date { font-size: 12px; color: var(--hint); }
+  .log-concept { font-size: 13px; font-weight: 500; }
+  .log-source { font-size: 11px; color: var(--hint); font-style: italic; margin-top: 8px; }
+  .log-text { font-size: 14px; line-height: 1.65; }
+  .bar-row { margin-bottom: 12px; }
+  .bar-info { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 13px; }
+  .bar-info span:last-child { color: var(--muted); font-size: 12px; }
+  .bar-track { height: 3px; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
+  .bar-fill { height: 3px; background: var(--accent); border-radius: 2px; }
+  .reset-btn { background: none; border: none; cursor: pointer; font-size: 12px; color: var(--hint); text-decoration: underline; font-family: var(--font-body); transition: color 0.15s; }
+  .reset-btn:hover { color: var(--muted); }
+  .count-badge { background: #EAF3DE; color: #27500A; padding: 1px 7px; border-radius: 8px; font-size: 11px; }
+  .loading { text-align: center; padding: 4rem 1rem; color: var(--muted); font-size: 14px; }
+  .error-box { background: #FCEBEB; color: #791F1F; border-radius: var(--r-md); padding: 1.25rem; font-size: 14px; line-height: 1.7; }
+  .error-box code { background: rgba(0,0,0,0.07); padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+  @media (max-width: 480px) { .wrap { padding: 1.25rem 1rem 3rem; } .concept-title { font-size: 20px; } .level-name { font-size: 18px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="wordmark">The Arena</p>
+  <div id="app"><div class="loading">Caricamento concetti...</div></div>
+</div>
+
+<script>
+const LEVELS=[{n:'Recluta',min:0,max:200},{n:'Soldato',min:200,max:500},{n:'Guerriero',min:500,max:1000},{n:'Campione',min:1000,max:2000},{n:'Gladiatore',min:2000,max:99999}];
+const XP={Vittoria:50,Sconfitta:30,Insight:20};
+
+let C=[];
+let S={view:'today',logType:'Insight',flash:null};
+let P={xp:0,streak:0,lastDate:'',total:0};
+let E=[];
+
+function loadStorage(){
+  try{const p=localStorage.getItem('arena_p');if(p)P=JSON.parse(p);}catch(e){}
+  try{const e=localStorage.getItem('arena_e');if(e)E=JSON.parse(e);}catch(e){}
+}
+function save(){
+  try{localStorage.setItem('arena_p',JSON.stringify(P));localStorage.setItem('arena_e',JSON.stringify(E));}catch(e){}
+}
+
+async function loadConcepts(){
+  try {
+    const res = await fetch('./concepts.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    C = await res.json();
+  } catch(err) {
+    document.getElementById('app').innerHTML = `
+      <div class="error-box">
+        <strong>Impossibile caricare concepts.json</strong><br><br>
+        Se stai aprendo il file direttamente dal desktop (file://), il browser blocca il caricamento di file locali per sicurezza.<br><br>
+        <strong>Soluzione rapida in locale:</strong> apri il terminale nella cartella del progetto e lancia:<br>
+        <code>python3 -m http.server</code><br>
+        poi vai su <code>http://localhost:8000</code><br><br>
+        Su GitHub Pages non avrai questo problema.
+      </div>`;
+    throw err;
+  }
+}
+
+function lv(xp){return LEVELS.find(l=>xp>=l.min&&xp<l.max)||LEVELS[4];}
+function todayIdx(){return Math.floor(Date.now()/86400000)%C.length;}
+function todayStr(){return new Date().toDateString();}
+function loggedToday(){return E.some(e=>new Date(e.ts).toDateString()===todayStr());}
+function typeColors(t){
+  if(t==='Vittoria')return{bg:'#EAF3DE',tx:'#27500A',br:'#C0DD97'};
+  if(t==='Sconfitta')return{bg:'#FCEBEB',tx:'#791F1F',br:'#F7C1C1'};
+  return{bg:'#E6F1FB',tx:'#0C447C',br:'#B5D4F4'};
+}
+
+function render(){
+  const concept=C[todayIdx()];
+  const level=lv(P.xp);
+  const pct=Math.min(100,Math.round(((P.xp-level.min)/(level.max-level.min))*100));
+  let h='';
+
+  h+=`<div class="header">
+    <div>
+      <p class="level-name">${level.n}</p>
+      <p class="xp-label">${P.xp} XP</p>
+      <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+      <p class="progress-hint">${level.max-P.xp<9999?level.max-P.xp+' XP al prossimo livello':'Livello massimo'}</p>
+    </div>
+    <div class="streak-block">
+      <p class="streak-num">${P.streak}</p>
+      <p class="streak-label">giorni streak</p>
+      <p class="streak-label" style="margin-top:8px">${P.total} entr${P.total===1?'y':'ies'}</p>
+    </div>
+  </div>`;
+
+  const views=[['today','Sfida del giorno'],['library','Libreria'],['log','Diario'],['stats','Stats']];
+  h+=`<nav class="nav">`;
+  views.forEach(([k,l])=>h+=`<button class="nb${S.view===k?' on':''}" onclick="sv('${k}')">${l}</button>`);
+  h+=`</nav>`;
+
+  if(S.flash) h+=`<div class="flash" id="flash-msg">${S.flash}</div>`;
+
+  if(S.view==='today') h+=viewToday(concept);
+  else if(S.view==='library') h+=viewLibrary();
+  else if(S.view==='log') h+=viewLog();
+  else h+=viewStats();
+
+  document.getElementById('app').innerHTML=h;
+}
+
+function viewToday(c){
+  let h=`<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px">
+      <div>
+        <p class="concept-author">${c.a} &mdash; <em>${c.b}</em></p>
+        <p class="concept-title">${c.t}</p>
+      </div>
+      <div style="text-align:right;flex-shrink:0">${c.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+    </div>
+    <p class="concept-body">${c.d}</p>
+    <div class="challenge-block">
+      <p class="challenge-label">Sfida del giorno</p>
+      <p class="challenge-text">${c.ch}</p>
+    </div>
+  </div>`;
+
+  if(loggedToday()){
+    const entry=[...E].reverse().find(e=>new Date(e.ts).toDateString()===todayStr());
+    const col=typeColors(entry.type);
+    h+=`<div class="card">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+        <span class="badge" style="background:${col.bg};color:${col.tx}">${entry.type}</span>
+        <span style="font-size:13px;color:#6B6A65">Registrato oggi &mdash; +${entry.xp} XP</span>
+      </div>
+      <p class="log-text">${entry.text}</p>
+    </div>
+    <p style="font-size:13px;color:#A09F9A;text-align:center;padding:1rem">
+      Torna domani per la prossima sfida. &nbsp;
+      <button onclick="sv('library')" style="background:none;border:none;cursor:pointer;color:#1A1A18;font-size:13px;text-decoration:underline;font-family:'DM Sans',sans-serif">Esplora la libreria</button>
+    </p>`;
+  } else {
+    const types=['Vittoria','Sconfitta','Insight'];
+    h+=`<div class="card">
+      <p class="section-label">Registra la tua esperienza</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        ${types.map(tp=>{
+          const isOn=S.logType===tp;const col=typeColors(tp);
+          return `<button class="type-btn" data-tp="${tp}" onclick="stype('${tp}')" style="${isOn?`background:${col.bg};color:${col.tx};border-color:${col.br};font-weight:500`:''}">${tp} <span style="font-size:11px;opacity:0.7">+${XP[tp]}</span></button>`;
+        }).join('')}
+      </div>
+      <textarea id="log-txt" placeholder="Descrivi un episodio, una riflessione, un errore o un successo collegato a questo concetto..."></textarea>
+      <div style="margin-top:10px;display:flex;justify-content:flex-end">
+        <button class="btn-main" onclick="submit()">Registra nel diario</button>
+      </div>
+    </div>`;
+  }
+  return h;
+}
+
+function viewLibrary(){
+  const authors=[...new Set(C.map(c=>c.a))];
+  let h='';
+  authors.forEach(author=>{
+    const ac=C.filter(c=>c.a===author);
+    h+=`<p class="author-header">${author}</p>`;
+    ac.forEach(c=>{
+      const n=E.filter(e=>e.cid===c.id).length;
+      h+=`<div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:7px">
+          <div>
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px">
+              <p style="font-size:15px;font-weight:500">${c.t}</p>
+              ${n>0?`<span class="count-badge">${n} entr${n===1?'y':'ies'}</span>`:''}
+            </div>
+            <p style="font-size:12px;color:#6B6A65;font-style:italic">${c.b}</p>
+          </div>
+        </div>
+        <p style="font-size:13px;line-height:1.7;margin-bottom:8px">${c.d}</p>
+        <div>${c.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+      </div>`;
+    });
+  });
+  return h;
+}
+
+function viewLog(){
+  if(!E.length) return `<div class="empty">
+    <p>Il diario è vuoto</p>
+    <p>Completa la sfida del giorno per iniziare a costruire il tuo battle log.</p>
+  </div>`;
+  let h=`<p style="font-size:13px;color:#6B6A65;margin-bottom:1rem">${E.length} entr${E.length===1?'y':'ies'} totali</p>`;
+  [...E].sort((a,b)=>b.ts-a.ts).forEach(e=>{
+    const c=C.find(x=>x.id===e.cid);
+    const col=typeColors(e.type);
+    const d=new Date(e.ts).toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'});
+    h+=`<div class="card">
+      <div class="log-meta">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span class="badge" style="background:${col.bg};color:${col.tx}">${e.type}</span>
+          ${c?`<span class="log-concept">${c.t}</span>`:''}
+        </div>
+        <span class="log-date">${d} &nbsp;+${e.xp} XP</span>
+      </div>
+      <p class="log-text">${e.text}</p>
+      ${c?`<p class="log-source">${c.a} — ${c.b}</p>`:''}
+    </div>`;
+  });
+  return h;
+}
+
+function viewStats(){
+  const level=lv(P.xp);
+  const pct=Math.min(100,Math.round(((P.xp-level.min)/(level.max-level.min))*100));
+  const v=E.filter(e=>e.type==='Vittoria').length;
+  const sc=E.filter(e=>e.type==='Sconfitta').length;
+  const ins=E.filter(e=>e.type==='Insight').length;
+  const tagC={};
+  E.forEach(e=>{const c=C.find(x=>x.id===e.cid);if(c)c.tags.forEach(t=>{tagC[t]=(tagC[t]||0)+1;});});
+  const topT=Object.entries(tagC).sort((a,b)=>b[1]-a[1]).slice(0,6);
+
+  let h=`<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:1.25rem">
+    <div class="metric"><p class="metric-label">Livello</p><p class="metric-val">${level.n}</p><div class="progress-bar" style="width:100%;margin-top:8px"><div class="progress-fill" style="width:${pct}%"></div></div></div>
+    <div class="metric"><p class="metric-label">XP totale</p><p class="metric-val">${P.xp}</p><p class="metric-sub">${level.max-P.xp<9999?level.max-P.xp+' al prossimo':'Max!'}</p></div>
+    <div class="metric"><p class="metric-label">Streak</p><p class="metric-val">${P.streak}gg</p><p class="metric-sub">${P.total} entries</p></div>
+  </div>
+  <div class="card">
+    <p class="section-label">Battle log</p>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
+      <div style="background:#EAF3DE;padding:12px;border-radius:8px;text-align:center"><p style="font-family:'EB Garamond',serif;font-size:26px;color:#27500A">${v}</p><p style="font-size:12px;color:#3B6D11;margin-top:2px">Vittorie</p></div>
+      <div style="background:#FCEBEB;padding:12px;border-radius:8px;text-align:center"><p style="font-family:'EB Garamond',serif;font-size:26px;color:#791F1F">${sc}</p><p style="font-size:12px;color:#A32D2D;margin-top:2px">Sconfitte</p></div>
+      <div style="background:#E6F1FB;padding:12px;border-radius:8px;text-align:center"><p style="font-family:'EB Garamond',serif;font-size:26px;color:#0C447C">${ins}</p><p style="font-size:12px;color:#185FA5;margin-top:2px">Insights</p></div>
+    </div>
+  </div>`;
+
+  if(topT.length){
+    h+=`<div class="card"><p class="section-label">Temi più praticati</p>`;
+    topT.forEach(([tag,cnt])=>{
+      const w=Math.round((cnt/topT[0][1])*100);
+      h+=`<div class="bar-row"><div class="bar-info"><span>${tag}</span><span>${cnt}</span></div><div class="bar-track"><div class="bar-fill" style="width:${w}%"></div></div></div>`;
+    });
+    h+=`</div>`;
+  }
+
+  h+=`<div style="text-align:center;margin-top:1.5rem"><button class="reset-btn" onclick="resetAll()">Reset tutti i dati</button></div>`;
+  return h;
+}
+
+window.sv=function(v){S.view=v;S.flash=null;render();};
+window.stype=function(t){
+  S.logType=t;
+  document.querySelectorAll('[data-tp]').forEach(btn=>{
+    const tp=btn.getAttribute('data-tp');const col=typeColors(tp);const isOn=tp===t;
+    btn.style.background=isOn?col.bg:'';btn.style.color=isOn?col.tx:'';btn.style.borderColor=isOn?col.br:'';btn.style.fontWeight=isOn?'500':'';
+  });
+};
+window.submit=function(){
+  const ta=document.getElementById('log-txt');
+  const text=ta?ta.value.trim():'';
+  if(!text){if(ta){ta.style.borderColor='#E24B4A';setTimeout(()=>ta.style.borderColor='',1500);}return;}
+  const today=todayStr();
+  const yest=new Date();yest.setDate(yest.getDate()-1);
+  if(P.lastDate===yest.toDateString())P.streak+=1;
+  else if(P.lastDate!==today)P.streak=1;
+  P.lastDate=today;
+  const xpGain=XP[S.logType];
+  P.xp+=xpGain;P.total+=1;
+  E.push({ts:Date.now(),cid:C[todayIdx()].id,type:S.logType,text,xp:xpGain});
+  S.flash=`+${xpGain} XP — ${S.logType} registrata! Streak: ${P.streak} giorni.`;
+  save();render();
+  setTimeout(()=>{S.flash=null;const f=document.getElementById('flash-msg');if(f)f.remove();},3500);
+};
+window.resetAll=function(){
+  if(!confirm('Sei sicuro? Tutti i dati verranno eliminati.'))return;
+  P={xp:0,streak:0,lastDate:'',total:0};E=[];save();render();
+};
+
+loadStorage();
+loadConcepts().then(()=>render()).catch(()=>{});
+</script>
+</body>
+</html>
